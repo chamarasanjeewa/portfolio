@@ -1,6 +1,8 @@
 import * as React from "react";
-import { Component } from "react";
+import { Component, useContext } from "react";
+import {CvConext} from './../context/cv.context'
 const Education = () => {
+let cvVal=useContext(CvConext)
   return (
     <div>
       <h1>EDUCATION </h1>

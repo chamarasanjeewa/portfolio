@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Component } from "react";
+
+import { useContext } from "react";
 import "./../styles/experience.css";
 import { CareerInfoType } from "./../types";
 
@@ -10,6 +10,8 @@ export function CompanyExperience({
   client,
   companyName
 }: CareerInfoType) {
+
+ 
   return (
     <>
       <div>{title}</div>
