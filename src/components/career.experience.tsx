@@ -25,7 +25,7 @@ export const CareerInfoView = () => {
 
   let careerInfoList = careerInfo.careerInfo?.map(x => {
     return (
-      <div className="career-experience-grid">
+      <div key={x.time} className="career-experience-grid">
         <CompanyExperience
           title={x.title}
           time={x.time}

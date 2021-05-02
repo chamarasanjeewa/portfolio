@@ -3,7 +3,9 @@ import { CareerInfoType } from "../types";
 
 export interface IContextProps {
   careerInfo: CareerInfoType[];
-  setCareerInfo: React.Dispatch<React.SetStateAction<CareerInfoType[]>>;
+  setCareerInfo: React.Dispatch<
+    React.SetStateAction<CareerInfoType[] >
+  >;
 }
 
 const CvConext = createContext<IContextProps>({} as IContextProps);
@@ -11,16 +13,12 @@ const CvConext = createContext<IContextProps>({} as IContextProps);
 const Provider = (props: any) => {
   const [careerInfo, setCareerInfo] = useState<CareerInfoType[]>([]);
 
-  const contextValues: IContextProps = {
-    careerInfo: [],
+  const careerInfoValues: IContextProps = {
+    careerInfo: careerInfo,
     setCareerInfo: setCareerInfo
   };
 
-  return (
-    <CvConext.Provider value={contextValues}>
-      {props.children}
-    </CvConext.Provider>
-  );
+  return <CvConext.Provider value={careerInfoValues}>{props.children}</CvConext.Provider>;
 };
 
 export { CvConext, Provider };

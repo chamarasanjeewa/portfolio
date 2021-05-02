@@ -2,7 +2,10 @@ import "./../styles/header.scss";
 export function Header() {
   return (
     <div className="grid-heading">
-      <div>CHAMARA SANJEEWA</div>
+      <div className=".name">
+      <div>CHAMARA</div>
+      <div>SANJEEWA</div>
+      </div>
       <div>
         <ul>
           <li>Senior Tech Lead</li>

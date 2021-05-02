@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React, { createContext, useEffect, useState } from 'react';
 import './App.css';
 import { CompanyExperience } from "./components/company.experience";
 import Education from "./components/education";
@@ -7,19 +6,14 @@ import { Header } from "./components/header";
 import { Summary } from "./components/summary";
 import CareerInfo from "./data/experience.json";
 import {CareerInfoType} from './types'
+import {useContext} from 'react'
+import db from "./firebase.config.js";
+import { CvConext, Provider } from './context/cv.context';
+import { CareerInfoView } from './components/career.experience';
 
 function App() {
-  const [careerInfo, setCareerInfo] = useState<CareerInfoType[]>([] );
-  //console.log(CareerInfo.results[0].experience);
-
-  useEffect(() => {
-    //@ts-ignore
-    setCareerInfo(CareerInfo.results );
-    console.log(careerInfo);
-    
-  }, [careerInfo]);
-  
   return (
+    <Provider >
     <div className="container">
       <div className="main-grid-item main-grid-heading">
         <Header></Header>
@@ -29,17 +23,13 @@ function App() {
       </div>
 
       <div className="main-grid-item  main-grid-career">
-        {/* <!--career experience grid--> */}
-      
-          {careerInfo.map(x => {
-           return  <div className="career-experience-grid"> <CompanyExperience title={x.title} time={x.time} companyName={x.companyName} client={x.client} experience={x.experience} /> </div>;
-          })}
-        
+       <CareerInfoView></CareerInfoView>
       </div>
       <div className="main-grid-item">
         <Education />
       </div>
     </div>
+   </Provider>
   );
 }
 

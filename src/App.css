@@ -1,12 +1,13 @@
 body {
-  margin: 0;
+  margin:0 100px 0 100px;
+
 }
 
 .container {
   display: grid;
-  background-color: aqua;
+  background-color: burlywood;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
+  grid-gap: 0px;
 }
 
 .main-grid-item {
