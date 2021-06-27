@@ -19,6 +19,12 @@ font-weight: 700;
   list-style: none;
 }
 
+.img{
+   // width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
 .timeline {
     border-left: 3px solid $secoundary-color;
     border-bottom-right-radius: 4px;

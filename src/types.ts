@@ -21,6 +21,7 @@ export interface Technologies {
 
 export interface Projects {
   name: string;
+  url:string;
   client: string;
   clientOrigin: string;
   logo: string;
