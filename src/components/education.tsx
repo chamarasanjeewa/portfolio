@@ -1,28 +1,26 @@
 import * as React from "react";
-import { Component, useContext } from "react";
-import {CvConext} from './../context/cv.context'
+import { useContext } from "react";
+import { cvContext } from "./../context/cv.context";
+import "./../styles/education.scss";
+
 const Education = () => {
-let cvVal=useContext(CvConext)
+let cvVal = useContext(cvContext);
+
   return (
-    <div>
-      <h1>EDUCATION </h1>
-      <ul>
-        <li>
-          <div>
-            Master of Business Administration University of Colombo 2012-2014
-          </div>
-        </li>
-        <li>
-          <div>
-            Master of Business Administration University of Colombo 2012-2014
-          </div>
-        </li>
-        <li>
-          <div>
-            Master of Business Administration University of Colombo 2012-2014
-          </div>
-        </li>
-      </ul>
+    <div className="container mt-5">
+      <h1 className="header">Education </h1>
+      <div className="row justify-content-center align-items-center">
+       {cvVal?.education.map(x=>{
+        return  <div className="col-sm-3 me-2 " >
+          <div className="card text-center align-items-center pt-3"  >
+            <h3 className="header">{x.title}</h3>
+            <p>{x.institute}</p>
+            <p>{x.time}</p>
+
+          </div></div>
+       })}
+    </div>
+
     </div>
   );
 };

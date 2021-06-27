@@ -1,3 +1,4 @@
+import "./../styles/tools.scss";
 export function Tools() {
-  return <div></div>;
+  return <div className="container"><h1 className="header">Tools</h1></div>;
 }

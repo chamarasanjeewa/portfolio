@@ -1,4 +1,78 @@
+{"Workedprojects":[
+  {
+    "name":"baby journey",
+    "image":"/path",
+    "logo":"",
+    "clientOrigin":"sweedish",
+    "client":"baby journey",
+    "technologies":["react",".net core","oracle","typeScript","javascript","bitbucket","jira","git","javascript","nodeJS"]
+  },
+  {
+  "name":"permitto",
+  "image":"/path",
+  "logo":"",
+  "clientOrigin":"norway",
+  "client":"verico",
+  "technologies":["react",".net core","oracle","typeScript","javascript","bitbucket","jira","git","javascript","nodeJS"]
+},  {
+  "name":"permitto mobile app",
+  "image":"/path",
+  "clientOrigin":"norway",
+  "logo":"",
+  "client":"verico",
+  "technologies":["react-native","typeScript","javascript","bitbucket","jira","git","javascript","nodeJS"]
+},
 {
+  "name":"millum-commerce",
+  "image":"/path",
+  "logo":"",
+  "clientOrigin":"norway",
+  "client":"verico",
+  "technologies":["angular","Ionic 2",".net core","mongodb","msSql","typeScript","javascript","nodeJS"]
+},
+{
+  "name":" blueTag",
+  "image":"/path",
+  "clientOrigin":"norway",
+  "logo":"",
+  "client":"KTV",
+  "technologies":["angularJS","Asp.net mvc","Entity framework","mongodb","msSql","javascript","nodeJS"]
+},
+{
+  "name":" TrivialLife",
+  "image":"/path",
+  "clientOrigin":"norway",
+  "logo":"",
+  "client":"Unicorn solutions",
+  "technologies":["Asp.net mvc","Entity framework","MsSql","jquery"]
+},
+{
+  "name":"lande kubura",
+  "image":"/path",
+  "clientOrigin":"sl",
+  "logo":"",
+  "client":"feelance",
+  "technologies":["nextJs","React","React query","Zustand"]
+},
+{
+  "name":" sarala sinhala",
+  "image":"/path",
+  "clientOrigin":"sl",
+  "logo":"",
+  "client":"feelance",
+  "technologies":["Unity","Vuforia","c#"]
+},
+{
+  "name":"You drink we drive",
+  "image":"/path",
+  "clientOrigin":"sl",
+  "logo":"",
+  "client":"freelance",
+  "technologies":["Ionic 2"]
+}
+
+],
+
   "results": [
     {
       "companyName": "Embla software innovations",
@@ -12,35 +86,60 @@
         "Played a primary role in adopting team with verico’s tech stack.",
         "Proven consistency with client ratings above 3 out of 5 since 2018.",
         "Spearheading the development efforts, resulted in growing Verico-permitto customer base from 12,000 to 56,000 in short span of time."
-      ]
+      ],
+    "technologies":["React","React native", "Mobx","Type script","Java script",".net core","sqlite","oracle","jenkins","git","cypress"]
     },
     {
       "companyName": "Embla software innovations",
-      "title": "SENIOR TECH LEAD",
-      "time": "2018- Present",
-      "client": "Verico",
+      "title": "TECH LEAD",
+      "time": "2016- 2018",
+      "client": "Millum",
       "experience": [
-        "Contributing to full stack development of react powered web portal,react native. powered mobile, backend of legacy wcf, currently migrating in to .net core.",
-        " Actively involved in feature developments such as geo tracking| geofencing| safety cards in asset management for utility industry.",
-        " Ensuring strict code quality practices via peer reviews/ pull requests.",
-        "Played a primary role in adopting team with verico’s tech stack.",
-        "Proven consistency with client ratings above 3 out of 5 since 2018.",
-        "Spearheading the development efforts, resulted in growing Verico-permitto customer base from 12,000 to 56,000 in short span of time."
-      ]
+        "Established client's confidence towards the team to transit pilot project to full time development over time.",
+        "Provided technical assistance on determining development tools and technologies.",
+        "Actively involved in designing phase of the microservice based Millum commerce product.",
+        "Assisted the team in continuous improvements of the products and individual’s growth."
+         ],
+    "technologies":["Angular 6","Ionic 2", "Asp.net","Type script","Java script","Mongo db","Ms-sql","tfs","git"]
     },
     {
       "companyName": "Embla software innovations",
-      "title": "SENIOR TECH LEAD",
-      "time": "2018- Present",
-      "client": "Verico",
+      "title": "SSE/ TECH LEAD",
+      "time": "2014- 2016",
+      "client": "KTV",
       "experience": [
-        "Contributing to full stack development of react powered web portal,react native. powered mobile, backend of legacy wcf, currently migrating in to .net core.",
-        " Actively involved in feature developments such as geo tracking| geofencing| safety cards in asset management for utility industry.",
-        " Ensuring strict code quality practices via peer reviews/ pull requests.",
-        "Played a primary role in adopting team with verico’s tech stack.",
-        "Proven consistency with client ratings above 3 out of 5 since 2018.",
-        "Spearheading the development efforts, resulted in growing Verico-permitto customer base from 12,000 to 56,000 in short span of time."
-      ]
+        "Coordinated 10-12 diversified team members towards project goals.", 
+        "Stepped in pledging corrective actions at desperate times to fix client/ team miscommunications with help of the team and stabilized the project, hence got promoted to lead project.",  
+        "Introduced CI/CD tools and other measures which drastically minimized the deployment time and increased development efficiency.",
+        "Migrated legacy code to latest technologies thus reduced feature development time.",
+        "Introduced unit tests gradually helped minimizing number of bugs.", 
+        "Utilized tools such as Jenkins, SonarQube to measure and improve code coverage."
+         ],
+    "technologies":["AngularJs","KnockoutJs", "Asp.net mvc","Entity framework","MsSql","Java script","Nunit","git","jenkins"]
+    },
+    {
+      "companyName": "Unicorn solutions",
+      "title": "SE/ SSE",
+      "time": "2011- 2014",
+      "client": "Trivial life",
+      "experience": [
+        "Actively involved in architectural designs.",
+        "Contributed towards research and development of event schedular.",
+        "Managed interns, covering both HR and technical aspects."
+      ],
+    "technologies":["Asp.net mvc","Entity framework","MsSql","Java script","svn"]
+    },
+    {
+      "companyName": "Unicorn solutions",
+      "title": "SE/ SSE",
+      "time": "2008- 2011",
+      "client": "SDU | NIM| Bright vision|Virtusa(intern)",
+      "experience": [
+        "Contributed in software products/ projects for government institutions, logistic companies and several other domains.",
+"Involved in hands-on coding 90% of the time. ",
+"Actively contributed on design discussions by critically evaluating, while gaining knowledge on tools/ best practices and processes."
+      ],
+    "technologies":[".net","Nhibernate","Java","Wpf","svn"]
     }
   ]
 }

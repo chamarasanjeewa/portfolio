@@ -1,24 +1,22 @@
-import "./../styles/header.scss";
+import React from 'react';
+import  "./../styles/header.scss";
+
 export function Header() {
   return (
-    <div className="grid-heading">
-      <div className=".name">
-      <div>CHAMARA</div>
-      <div>SANJEEWA</div>
+    <div className="container" >
+     
+      <div className="row align-items-center">
+        <div className="col">
+      <h2 className="section-title">
+					Hey, I'm a <br/> <span><span>react</span></span> Developer.
+				</h2>
       </div>
-      <div>
-        <ul>
-          <li>Senior Tech Lead</li>
-          <li>+94712188862</li>
-          <li>Nugegoda, Sri Lanka</li>
-        </ul>
+      <div className="col-md-5 text-center d-none d-md-block">
+      <img src="https://api.wpmet.com/auth/wp-content/uploads/2020/12/pp_banner_image.png" title="" alt=""></img>
       </div>
-      <div>
-        <ul>
-          <li>chamara.sanjeewa@gmail.com</li>
-          <li>linkedin.com/in/chamarasanjeewa</li>
-        </ul>
       </div>
-    </div>
+      
+     
+      </div>
   );
 }

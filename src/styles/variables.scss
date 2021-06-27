@@ -1,0 +1,14 @@
+$myColor: #2E75B6;
+$secoundary-color:#00B4FF;
+@mixin hover {
+    &:hover{
+      color:$secoundary-color;
+    }
+    
+  }
+
+  @mixin bg-gradient-variant($parent, $color) {
+    #{$parent} {
+      background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
+    }
+  }

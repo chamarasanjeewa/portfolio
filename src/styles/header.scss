@@ -1,11 +1,17 @@
-$myColor: red;
-.grid-heading {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size:1rem;
-    background-color: $myColor;
-  }
+@import './main.scss';
+
+.section-title{
+    margin: 0px 0px 20px 0px;
+    font-family: "Fira Sans";
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 80px;
+
+    span{
+        span{
+
+            color: $secoundary-color;
+        }
+    }
+
+}
