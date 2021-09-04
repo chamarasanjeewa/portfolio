@@ -11,15 +11,15 @@ import { Blogs } from './components/blogs';
 
 function App() {
   return (
-    <Provider >
-        <Header></Header>
+    <Provider>
+      {/* <Header></Header>
         <Summary />
         <CompanyExperience/>
         <ProjectExperience/>
-        <TechnologiesAndTools/>
-        <Education />
-        <Blogs/>
-   </Provider>
+        <TechnologiesAndTools/> */}
+      <Education />
+      {/* <Blogs/> */}
+    </Provider>
   );
 }
 
