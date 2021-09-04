@@ -2,7 +2,7 @@
 import React,{useContext,useState} from 'react';
 import { cvContext } from '../context/cv.context';
 import "./../styles/experience.scss";
-
+import { AiOutlineCheck } from 'react-icons/ai';
 
 import { CareerInfoType } from "./../types";
 
@@ -88,14 +88,14 @@ export function CompanyExperience({
      {showIndex.find(x=>x.index===i) && <div >
         <ul className="experience">
           {x.experience?.map(x => (
-            <li><span>- </span>{x}</li>
+            <li><span className="me-2"><AiOutlineCheck style={{ color: "green", fontSize: "0.5em" }} /></span>{x}</li>
             ))}
         </ul>
-        <ul className="list-group list-group-horizontal d-flex justify-content-center align-items-center">
+        <div className="d-flex">
           {x.technologies?.map(x => (
-            <li className="list-group-item me-2  btn btn-sm btn-success border-radius-2">{x}</li>
+            <div className=" border-radius-3 btn btn-primary btn-small d-flex justify-content-left me-2 mt-3 py-0 align-items-center" style={{fontSize:'0.75rem'}}>{x}</div>
             ))}
-        </ul>
+        </div>
       </div>}
      </div>
                      </li>

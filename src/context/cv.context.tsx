@@ -1,7 +1,7 @@
-import React, { createContext,useEffect, useState } from "react";
+import { createContext,useEffect, useState } from "react";
 import { CareerInfoResult, CareerInfoType,Education, Technologies,Projects } from "../types";
 import db from "../firebase.config.js";
-import {results,Workedprojects} from './../data/experience.json'
+//import {results,Workedprojects} from './../data/experience.json'
 
 
 const cvContext = createContext<CareerInfoResult|null>(null);
@@ -14,31 +14,31 @@ const CvProvider = (props: any) => {
 
   const [loading,setLoading]=useState(false);
 
-  const insertProjects=async ()=>{
-    debugger;
-    let writeBatch = db.batch();
-    Workedprojects.forEach((x,index)=>{
-      const documentRef=db.collection('projects').doc(index.toString());
-      writeBatch.set(documentRef, x,{merge:true});
-    })
-  writeBatch.commit().then(() => {
-  console.log('Successfully executed batch.');
-  });
+//   const insertProjects=async ()=>{
+//     debugger;
+//     let writeBatch = db.batch();
+//     Workedprojects.forEach((x,index)=>{
+//       const documentRef=db.collection('projects').doc(index.toString());
+//       writeBatch.set(documentRef, x,{merge:true});
+//     })
+//   writeBatch.commit().then(() => {
+//   console.log('Successfully executed batch.');
+//   });
   
-  }
+//   }
 
-  const insertData=async ()=>{
-    debugger;
-    let writeBatch = db.batch();
-    results.forEach((x,index)=>{
-      const documentRef=db.collection('careerInfo').doc(index.toString());
-      writeBatch.set(documentRef, x);
-    })
-writeBatch.commit().then(() => {
-  console.log('Successfully executed batch.');
-});
+//   const insertData=async ()=>{
+//     debugger;
+//     let writeBatch = db.batch();
+//     results.forEach((x,index)=>{
+//       const documentRef=db.collection('careerInfo').doc(index.toString());
+//       writeBatch.set(documentRef, x);
+//     })
+// writeBatch.commit().then(() => {
+//   console.log('Successfully executed batch.');
+// });
 
-}
+//}
 
   useEffect(() => {
     const getCvData=async ()=>{

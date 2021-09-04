@@ -47,5 +47,5 @@ export function Technologies() {
 function Technology({iconName}:{iconName:string}){
   const iconPath = loadLogoByName(iconName);
 
-return (<li className="me-2"><img alt={iconName} src={iconPath} width={'55px'} height={'55px'}></img></li>)
+return (<li className="me-2"><img alt={""} src={iconPath} width={'55px'} height={'55px'}></img></li>)
 }

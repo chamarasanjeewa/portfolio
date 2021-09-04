@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { CompanyExperience } from "./components/company.experience";
 import Education from "./components/education";
@@ -8,7 +7,6 @@ import {  Provider } from './context/cv.context';
 import { ProjectExperience } from './components/project.experience';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Technologies as TechnologiesAndTools } from './components/technologies';
-import { Tools } from './components/tools';
 import { Blogs } from './components/blogs';
 
 function App() {
