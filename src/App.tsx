@@ -1,12 +1,12 @@
 import './App.css';
-import { CompanyExperience } from "./components/company.experience";
+// import { CompanyExperience } from "./components/company.experience";
 import Education from "./components/education";
-import { Header } from "./components/header";
-import { Summary } from "./components/summary";
+// import { Header } from "./components/header";
+// import { Summary } from "./components/summary";
 import {  Provider } from './context/cv.context';
-import { ProjectExperience } from './components/project.experience';
+// import { ProjectExperience } from './components/project.experience';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Technologies as TechnologiesAndTools } from './components/technologies';
+// import { Technologies as TechnologiesAndTools } from './components/technologies';
 import { Blogs } from './components/blogs';
 
 function App() {
