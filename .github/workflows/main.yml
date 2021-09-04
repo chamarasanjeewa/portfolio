@@ -36,6 +36,6 @@ jobs:
           echo test, and deploy your project.
 
       -name install packages
-        run: |
+        run: 
          npm install
          npm run build
