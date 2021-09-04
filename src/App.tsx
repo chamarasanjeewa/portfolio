@@ -7,7 +7,7 @@ import {  Provider } from './context/cv.context';
 // import { ProjectExperience } from './components/project.experience';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import { Technologies as TechnologiesAndTools } from './components/technologies';
-import { Blogs } from './components/blogs';
+//import { Blogs } from './components/blogs';
 
 function App() {
   return (
