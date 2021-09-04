@@ -4,7 +4,7 @@ import { cvContext } from '../context/cv.context';
 import "./../styles/experience.scss";
 
 
-import { CareerInfoType } from "./../types";
+// { CareerInfoType } from "./../types";
 
   //const careerInfoResult= useContext(cvContext)
   //const careerInfoResult= useContext(cvContext)
