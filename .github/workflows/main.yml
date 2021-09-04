@@ -38,4 +38,4 @@ jobs:
       -name: install packages
         run: |
          npm install
-         npm run build
+        
